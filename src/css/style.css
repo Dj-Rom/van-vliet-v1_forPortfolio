@@ -4,24 +4,29 @@
     padding: 0;
     font-size: 11px;
     font-family: 'Roboto Slab', serif;
+    color: #090909;
 
 }
 
 html {
     background: url("./img/europe-map.avif") no-repeat, center;
     background-size: cover;
+    height: 100%;
 }
 
+.gpsText {
+    color: #0818f3;
+}
 
 
 .logo {
     position: relative;
     display: flex;
-    align-items: center;
     justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-    flex-direction: row;
+    align-content: stretch;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    align-items: baseline;
 
 }
 
@@ -29,11 +34,11 @@ html {
 .contaner {
     position: relative;
     display: grid;
-    justify-items: stretch;
-    align-content: space-around;
-    justify-content: space-evenly;
+    justify-items: center;
+    align-content: stretch;
+    justify-content: space-around;
     width: 100%;
-    align-items: baseline;
+    align-items: stretch;
 }
 
 .list_client_NL {
@@ -46,16 +51,20 @@ html {
 }
 
 .btnBack {
+    font-family: revert;
     position: absolute;
-    bottom: 4px;
-    width: 95%;
+    margin: 12px auto;
     text-align: center;
-    font-size: 35px;
-
+    width: 100%;
+    font-size: 20px;
+    left: 0px;
 }
 
 td {
+    font-weight: 900;
+    color: #090909;
     border: 1px solid rgb(70, 69, 69);
+
 }
 
 
@@ -70,6 +79,6 @@ td {
     }
 
     img {
-        max-width: 35px;
+        max-width: 125px;
     }
 }

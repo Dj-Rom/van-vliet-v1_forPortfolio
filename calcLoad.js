@@ -7,7 +7,7 @@ export function createLabel(text) {
 export function addNewCont(key, val, obj) {
     val.value = key
 
-    localStorage.setItem('calcVliet', JSON.stringify(obj))
+    localStorage.setItem('calcVlietV2', JSON.stringify(obj))
 }
 
 
@@ -21,8 +21,9 @@ export function resetCont() {
         'NC': 0,
         'SH_CC': 0,
         "PALLETS": 0,
+        "EXTENSION": 0,
     }
-    localStorage.setItem('calcVliet', JSON.stringify(loadedIntoTrailer))
+    localStorage.setItem('calcVlietV2', JSON.stringify(loadedIntoTrailer))
     location.reload()
 
 
@@ -36,7 +37,8 @@ export let loadedIntoTrailer = {
     'NC': 0,
     'SH_CC': 0,
     "PALLETS": 0,
+    "EXTENSION": 0,
 }
-!localStorage.calcVliet ? localStorage.setItem('calcVliet', JSON.stringify(loadedIntoTrailer)) : ''
+!localStorage.calcVlietV2 ? localStorage.setItem('calcVlietV2', JSON.stringify(loadedIntoTrailer)) : ''
 
 

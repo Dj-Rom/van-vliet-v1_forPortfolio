@@ -1,14 +1,16 @@
 * {
     box-sizing: border-box;
-    margin: 5px;
+    margin: 2px;
     border-radius: 5px;
     align-self: center;
     font-family: 'Roboto Slab', serif;
+    color: #090909;
 }
 
 html {
     background: url("./img/europe-map.avif") no-repeat, center;
     background-size: cover;
+    height: 100%;
 }
 
 .contener {
@@ -20,6 +22,11 @@ html {
     justify-items: center;
 }
 
+.resetBtn,
+.MBtn {
+
+    width: 100%
+}
 
 button,
 input {
